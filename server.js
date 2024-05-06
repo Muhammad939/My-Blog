@@ -1,12 +1,13 @@
-import express from "express";
-import bodyParser from "body-parser";
-import axios from "axios";
+const express = require("express");
+const bodyParser = require("body-parser");
+const axios = require("axios");
+
+// Including index.js file
+require('./index.js');
 
 const app = express();
 const port = 3000;
 const API_URL = "http://localhost:4000";
-
-require("./index")
 
 app.use(express.static("public"));
 
